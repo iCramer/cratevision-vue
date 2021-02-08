@@ -1,0 +1,18 @@
+.button-group {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.align-right {
+  justify-content: flex-end;
+
+  .left-btn {
+
+  }
+}
+.align-center {
+  justify-content: center;
+}
+.align-justified {
+  justify-content: space-between;
+}

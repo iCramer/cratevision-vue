@@ -1,0 +1,74 @@
+// For use with vue-tooltip-directive plugin
+
+$tooltip-background-color: $gray-800;
+
+.vue-tooltip {
+  background: $tooltip-background-color;
+  border-radius: 3px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, .1);
+  padding: 0.3rem;
+  font-size: .85rem;
+  text-align: center;
+  line-height: 1rem;
+  color: #fff;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  &[x-placement^="top"] {
+    margin-bottom: 5px;
+
+    &::before {
+      bottom: -5px;
+      left: calc(50% - 5px);
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid $tooltip-background-color;
+    }
+  }
+
+  &[x-placement^="bottom"] {
+    margin-top: 5px;
+
+    &::before {
+      top: -5px;
+      left: calc(50% - 5px);
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid $tooltip-background-color;
+    }
+  }
+
+  &[x-placement^="left"] {
+    margin-right: 5px;
+
+    &::before {
+      right: -5px;
+      bottom: calc(50% - 5px);
+      border-left: 5px solid $tooltip-background-color;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+    }
+  }
+
+  &[x-placement="right"] {
+    margin-left: 5px;
+
+    &::before {
+      left: -5px;
+      bottom: calc(50% - 5px);
+      border-right: 5px solid $tooltip-background-color;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+    }
+  }
+
+  img {
+    width: 250px;
+  }
+}

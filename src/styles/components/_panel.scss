@@ -1,0 +1,45 @@
+.panel {
+  position: relative;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.09);
+  width: 100%;
+  margin-bottom: $grid-gutter-width;
+
+  &.blue {
+    border-top: 4px solid $blue;
+  }
+  &.pink {
+    border-top: 4px solid $pink;
+  }
+  &.yellow {
+    border-top: 4px solid $yellow;
+  }
+
+  &.panel-sticky {
+    position: sticky;
+    -webkit-position: sticky;
+    top: 15px;
+  }
+
+  .panel-header {
+    padding: 10px 15px 0 15px;
+    border-radius: 2px 2px 0 0;
+    display: flex;
+    justify-content: space-between;
+
+    .panel-title {
+      margin-bottom: 0;
+    }
+  }
+
+  .panel-body {
+    padding: 15px;
+  }
+
+  .panel-utility {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,30 @@
+.error-banner {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(45deg, #ab0000 25%, #a30000 25%, #a30000 50%, #ab0000 50%, #ab0000 75%, #a30000 75%, #a30000 100%);
+  background-size: 28.28px 28.28px;
+  padding-right: .8rem;
+  overflow: hidden;
+
+  .error-banner-icon {
+    padding: .8rem;
+    background: rgba(0, 0, 0, .3);
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+  }
+
+  .error-list {
+    list-style-type: none;
+    padding: .8rem;
+    margin: 0;
+  }
+
+  .error-banner-close {
+    margin-left: auto;
+    color: #fff;
+  }
+}

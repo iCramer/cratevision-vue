@@ -1,0 +1,32 @@
+.title-bar {
+  background: $gray-100;
+  border-top: 1px solid $gray-400;
+  margin-bottom: $grid-gutter-width;
+  border-bottom: 2px solid $gray-400;
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+
+  .title {
+    margin: 0;
+  }
+
+  .title-back-btn {
+    margin-bottom: .2rem;
+    font-size: .85rem;
+  }
+
+  &.title-bar-nav {
+    .left-content {
+      align-self: flex-end;
+    }
+
+    .title {
+      margin-top: 1rem;
+    }
+  }
+
+  .right-content {
+    margin-left: auto;
+  }
+}

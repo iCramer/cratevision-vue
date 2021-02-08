@@ -1,0 +1,28 @@
+.expand-enter-active, .expand-leave-active {
+  transition: transform .2s ease-out;
+  transform-origin: 100% 0%;
+}
+
+.expand-enter, .expand-leave-to {
+  transform: scaleY(0);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .2s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-active, .modal-leave-active {
+  transition: all .2s;
+}
+
+.modal-enter, .modal-leave-to {
+  opacity: 0;
+
+  .modal-dialog {
+    margin-top: -100px;
+  }
+}

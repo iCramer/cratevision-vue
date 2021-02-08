@@ -1,0 +1,215 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "./custom"; //override variables
+@import "./variables";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+@import "./components/panel";
+@import "./components/side-nav";
+@import "./components/title-bar";
+@import "./components/top-bar";
+@import "./components/table";
+@import "./components/button";
+@import "./components/dropdown";
+@import "./components/form";
+@import "./components/list-group";
+@import "./components/block";
+@import "./components/badge";
+@import "./components/modal";
+@import "./components/tabs";
+@import "./components/counter-input";
+@import "./components/no-results";
+@import "./components/slider-panel";
+@import "./components/loading";
+@import "./components/progress-tracker";
+@import "./components/button-group";
+@import "./components/accordion";
+@import "./components/transitions";
+@import "./components/progress-bar";
+@import "./components/pill-box";
+@import "./components/image-gallery";
+@import "./components/image-editor";
+@import "./components/toast";
+@import "./components/toggle";
+@import "./components/search-input";
+@import "./components/error-banner";
+@import "./components/tooltip";
+@import "./components/pagination";
+
+body {
+  background: $background-gray;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: $font-size-base * 2;
+}
+
+a {
+  color: $blue;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+main.logged-in {
+  padding-bottom: 40px;
+}
+
+hr {
+  margin: .5rem 0;
+}
+
+.container, .container-fluid {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+
+.row {
+  &.full-height-cols {
+    & > * {
+      display: flex;
+    }
+  }
+}
+
+.sticky {
+  position: sticky;
+  -webkit-position: sticky;
+  top: 15px;
+}
+
+.auth {
+  & > div {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+    &:first-of-type {
+      background: #283E4A;
+      position: relative;
+      overflow: hidden;
+
+      .parallels1, .parallels2 {
+        position: absolute;
+        width: 122%;
+        height: 361px;
+        border-top: 20px solid #172b35;
+        border-bottom: 20px solid #172b35;
+        transform: rotate(-45deg) translate(0, 17px);
+      }
+
+      .parallels2 {
+        height: 423px;
+        border-width: 12px;
+      }
+    }
+
+    img {
+      display: block;
+      width: 170px;
+      margin: 15px auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .auth-subtext {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    #login {
+      width: 400px;
+    }
+
+    #register {
+      width: 550px;
+    }
+  }
+}
+
+.section-title {
+  font-size: .8rem;
+  font-weight: 600;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  clear: both;
+
+  &.list-title {
+    color: $gray-500;
+    border-bottom: 1px solid $gray-400;
+  }
+
+  &.form-title {
+    color: $gray-600;
+    border-bottom: 1px solid $gray-600;
+  }
+
+  .section-edit {
+    float: right;
+  }
+}
+
+.product-img {
+  margin: 0 auto 20px;
+  display: block;
+  max-height: 209px;
+}
+
+.product-order-total {
+  width: 30%;
+  text-align: right;
+  font-weight: 600;
+  margin: 1.5rem 0 1.5rem auto;
+
+  h6 {
+    font-weight: 600;
+  }
+}
+
+.img-thumbnail {
+  width: 60px;
+}
+
+.inventory-tooltip {
+  &.tooltip-content {
+    & > span {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      margin: 5px;
+
+      span {
+        font-weight: 600;
+        margin-left: .3rem;
+      }
+    }
+  }
+}
+
+.toolbar {
+  display: flex;
+  margin-bottom: 1rem;
+}

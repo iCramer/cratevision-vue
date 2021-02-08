@@ -1,0 +1,21 @@
+.pill-box {
+  background: $info;
+  display: inline-flex;
+  color: #fff;
+  border-radius: 10rem;
+  font-size: .85rem;
+  margin-right: 5px;
+  padding: 3px 5px;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+
+  span {
+    padding: 0 3px;
+  }
+
+  button.pill-btn {
+    color: #fff;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,23 @@
+.image-gallery {
+  .main-image {
+    width: 80%;
+    max-width: 300px;
+    display: inline-block;
+  }
+
+  .thumbnail-images {
+    margin-left: 5px;
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+
+    button.thumbnail-image {
+      background: none;
+      border: none;
+
+      &:hover, &:focus {
+        border: 2px solid $gray-200;
+      }
+    }
+  }
+}

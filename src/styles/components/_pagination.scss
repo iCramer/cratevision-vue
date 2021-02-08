@@ -1,0 +1,63 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      padding: 7px;
+      border-radius: 5px;
+    }
+
+    .btn {
+      padding: .4rem;
+    }
+  }
+
+  .pagination-select {
+    position: relative;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .select-arrow {
+      position: absolute;
+      right: 8px;
+      pointer-events: none;
+    }
+
+    select {
+      min-width: 50px;
+      padding: 0.2rem 25px .2rem .5rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+
+  label {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .page-length {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.panel {
+  .pagination {
+    margin-top: 1.5rem;
+  }
+}

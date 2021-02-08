@@ -1,0 +1,111 @@
+.badge {
+
+  &.badge-pill {
+    color: #fff;
+    padding: .15rem .6rem;
+    border-radius: 10rem;
+    font-size: .85rem;
+    line-height: 1rem;
+    cursor: default;
+
+    &.badge-primary {
+      background: $primary;
+    }
+    &.badge-secondary {
+      background: $secondary;
+    }
+    &.badge-warning {
+      background: $warning;
+    }
+    &.badge-danger {
+      background: $danger;
+    }
+    &.badge-success {
+      background: $success;
+    }
+    &.badge-light {
+      background: $light;
+      color: $body-color;
+    }
+    &.badge-info {
+      background: $info;
+    }
+    &.badge-dark {
+      background: $dark;
+    }
+  }
+
+  &.badge-blip {
+    &::before {
+      content: '';
+      display: inline-block;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+    }
+
+    &.badge-primary::before {
+      background: $primary;
+    }
+    &.badge-secondary::before {
+      background: $secondary;
+    }
+    &.badge-warning::before {
+      background: $warning;
+    }
+    &.badge-danger::before {
+      background: $danger;
+    }
+    &.badge-success::before {
+      background: $success;
+    }
+    &.badge-light::before {
+      background: $light;
+    }
+    &.badge-info::before {
+      background: $info;
+    }
+    &.badge-dark::before {
+      background: $dark;
+    }
+  }
+
+  &.badge-outline {
+    padding: .2rem .5rem;
+    border-radius: 3px;
+
+    &.badge-primary {
+      color: $primary;
+      border: 1px solid $primary;
+    }
+    &.badge-secondary {
+      color: $secondary;
+      border: 1px solid $secondary;
+    }
+    &.badge-warning {
+      color: $warning;
+      border: 1px solid $warning;
+    }
+    &.badge-danger {
+      color: $danger;
+      border: 1px solid $danger;
+    }
+    &.badge-success {
+      color: $success;
+      border: 1px solid $success;
+    }
+    &.badge-light {
+      color: $light;
+      border: 1px solid $light;
+    }
+    &.badge-info {
+      color: $info;
+      border: 1px solid $info;
+    }
+    &.badge-dark {
+      color: $dark;
+      border: 1px solid $dark;
+    }
+  }
+}

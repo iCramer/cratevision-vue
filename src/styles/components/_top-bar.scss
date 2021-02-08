@@ -1,0 +1,210 @@
+#top-bar {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  background: #ececec;
+  position: relative;
+  height: 65px;
+  align-items: center;
+  // border-top: 5px solid #006473;
+
+  .top-bar-accent {
+    // background: $be-background-image;
+    background: #006473;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: $be-overlay-color;
+    }
+  }
+
+  #top-bar-logo {
+    margin: 0;
+    font-weight: 600;
+    color: #396177;
+  }
+
+  .right-content {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+
+    & > * {
+      margin-left: .5rem;
+    }
+
+    .notifications {
+      position: relative;
+
+      .notifications-badge {
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        background: #ffcf00;
+        border: 1px solid #fff;
+        top: 1px;
+        left: -5px;
+        z-index: 3;
+        border-radius: 50%;
+      }
+
+      .notifications-dd {
+        & > button {
+          padding: 0;
+          font-size:  1.3rem;
+        }
+      }
+    }
+
+    .top-bar-btn {
+      background: none;
+      border: none;
+      border-radius: 50%;
+      color: $info;
+      font-size: 1.5rem;
+      width: 38px;
+      height: 38px;
+      transition: all .2s ease-out;
+
+      &:focus, &:hover {
+        outline: none;
+        background: rgba(0 ,0 ,0 ,.1);
+      }
+    }
+
+    .avatar {
+      .avatar-btn {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        background: $info;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        border: none;
+        transition: all .2s ease;
+        overflow: hidden;
+        // box-shadow: 0 0 0px 2px $info;
+
+        img {
+          max-width: none;
+          width: 38px;
+          margin-top: -1px;
+        }
+
+        &:focus, &:hover {
+          outline: none;
+          box-shadow: 0 0 0px 3px $info;
+        }
+      }
+
+      .avatar-dd {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 260px;
+        background: $gray-100;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        z-index: 100;
+
+        &::before {
+          display: block;
+          content: "";
+          position: absolute;
+          top: -7px;
+          right: 26px;
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-bottom: 8px solid $info;
+        }
+
+        .avatar-dd-header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            background: $info;
+            z-index: -1;
+            border-radius: 5px 5px 0 0;
+          }
+
+          .avatar-header-image {
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 65px;
+            height: 65px;
+            background: $info;
+            color: #fff;
+            font-size: 1.5rem;
+            overflow: hidden;
+
+            img {
+              max-width: none;
+              width: 66px;
+            }
+          }
+
+          .name {
+            line-height: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            margin: .4rem 0 0 0;
+          }
+
+          .email {
+            margin: 0;
+            font-style: italic;
+          }
+        }
+
+        .avatar-dd-body, .avatar-dd-header {
+          padding: 1rem .5rem .2rem .5rem;
+        }
+
+        .avatar-dd-body {
+          padding: 0 0 .3rem 0;
+          list-style-type: none;
+          margin: 0;
+
+          button, a {
+            display: block;
+            width: 100%;
+            text-align: left;
+          }
+        }
+
+        .avatar-dd-icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

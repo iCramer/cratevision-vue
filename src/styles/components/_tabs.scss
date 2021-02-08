@@ -1,0 +1,19 @@
+.tabs {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  .tab-item {
+    display: inline-block;
+  }
+}
+
+.tab-item-content {
+  position: relative;
+
+  img {
+    max-height: 150px;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+}

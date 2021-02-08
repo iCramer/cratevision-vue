@@ -1,0 +1,46 @@
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid $gray-200;
+    background: $gray-100;
+
+    .accordion-item-header {
+      margin-bottom: 0;
+
+      button {
+        width: 100%;
+        display: flex;
+        color: $info;
+        background: none;
+        border: none;
+        padding: .5rem;
+        align-items: center;
+        line-height: 100%;
+
+        & > * {
+          margin-right: 10px;
+        }
+
+        &:focus {
+          outline: none;
+          background: $gray-200;
+        }
+      }
+
+      .accordion-item-utility {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+
+    .accordion-item-content {
+      padding: 1rem;
+      background: #fff;
+    }
+
+    &.open {
+      .accordion-item-header {
+        background: #fff;
+      }
+    }
+  }
+}
